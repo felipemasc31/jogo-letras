@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-jogo {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+#area-jogo {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto 12px;
+    border: 2px solid #4e4e4e;
+    background: #222222;
+    overflow: hidden;
+}
+
+#botao-reiniciar {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background: #00ff00;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.1s ease;
+}
+
+#botao-reiniciar:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
