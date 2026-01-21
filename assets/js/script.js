@@ -14,13 +14,13 @@ let intervaloSpawn = 1000;
 let ultimoFrame = performance.now();
 let jogoEncerrado = false;
 let animacaoIniciada = false;
+let acrescimoVelocidade = 0;
 
 function letraAleatoria() {
     const indice = Math.floor(Math.random() * LETRAS.length); // gera uma letra aleatória
     return LETRAS[indice];
 }
 
-// cria a letra que vai cair
 function criarLetra() {
     const caracter = letraAleatoria();
     const elemento = document.createElement('span');
@@ -28,8 +28,10 @@ function criarLetra() {
     elemento.textContent = caracter;
 
     const posX = Math.random() * (areaJogo.clientWidth - 30); // posição aleatória
-    const posY = -30; // acima da tela
-    const velocidade = 1.5 + Math.random() * 2.5; // velocidade aleatória
+    const posY = -30;
+    const velocidade = (1.5 + acrescimoVelocidade);
+
+    acrescimoVelocidade += 0.05
 
     const letraObj = { elemento, caracter, posX, posY, velocidade };
 
@@ -53,6 +55,7 @@ function reiniciarJogo() {
     tempoDesdeUltimaLetra = 0;
     ultimoFrame = performance.now();
     jogoEncerrado = false;
+    acrescimoVelocidade = 0;
 
     pontosComp.textContent = pontos;
     vidasComp.textContent = vidas;
