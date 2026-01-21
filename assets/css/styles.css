@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #000000;
+    background: #0d1117;
     color: #ffffff;
     min-height: 100vh;
     display: flex;
@@ -35,7 +35,7 @@ h1 {
     width: 400px;
     height: 500px;
     margin: 0 auto 12px;
-    border: 2px solid #4e4e4e;
+    border: 2px solid #30c1c1;
     background: #222222;
     overflow: hidden;
 }
@@ -43,7 +43,7 @@ h1 {
 .letra {
     position: absolute;
     font-size: 32px;
-    color: #00ff00;
+    color: #30c1c1;
     font-weight: bold;
 }
 
@@ -51,7 +51,7 @@ h1 {
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
-    background: #00ff00;
+    background: #30c1c1;
     color: #000000;
     font-weight: bold;
     cursor: pointer;
@@ -67,7 +67,7 @@ h1 {
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
-    background: #00ff00;
+    background: #30c1c1;
     color: #000000;
     font-weight: bold;
     cursor: pointer;
